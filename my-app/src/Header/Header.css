@@ -1,0 +1,21 @@
+.Header {
+  width: full;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: gray;
+}
+.todo {
+  font-size: 70px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+@media screen and (max-width: 480px) {
+  .Header {
+    height: 50px;
+  }
+  .todo {
+    font-size: 30px;
+  }
+}

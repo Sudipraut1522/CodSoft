@@ -1,0 +1,13 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.workDone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
