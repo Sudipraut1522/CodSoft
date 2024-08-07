@@ -1,0 +1,11 @@
+.cart {
+  display: flex;
+}
+.number {
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}

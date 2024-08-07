@@ -1,0 +1,11 @@
+.Header {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  flex-wrap: wrap;
+  color: white;
+}

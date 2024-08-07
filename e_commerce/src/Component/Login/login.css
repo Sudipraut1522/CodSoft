@@ -1,0 +1,10 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.p {
+  font: bold;
+}

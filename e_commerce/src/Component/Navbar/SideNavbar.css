@@ -1,0 +1,93 @@
+/* SideNavbar.css */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 200px;
+}
+
+.sidenav a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #575757;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.openBtn {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  top: 15px;
+  right: 15px;
+  color: black;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .sidenav {
+    position: absolute;
+
+    margin-top: 110px;
+    height: auto;
+    width: 100%; /* Adjust width for smaller screens */
+  }
+  .sidenav a {
+    width: 100%;
+  }
+  a:hover {
+    color: #f1f1f1;
+    background-color: #575757;
+  }
+  .sidenav.open {
+    width: 100%;
+  }
+  .sidenav .closebtn {
+    color: black;
+  }
+  .openBtn {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    color: white;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 270px) {
+  .sidenav {
+    margin-top: 130px;
+    height: auto;
+    width: 100%;
+  }
+}
