@@ -9,6 +9,10 @@ const Sidenav = () => {
   const toggleNav = () => setIsOpen(!isOpen);
   const closeNav = () => setIsOpen(false);
 
+  const handelLogout = () => {
+    localStorage.removeItem("username");
+  };
+
   return (
     <div>
       <div className={`sidenav ${isOpen ? "open" : ""}`}>
@@ -19,6 +23,9 @@ const Sidenav = () => {
         <Link to="about">Services</Link>
         <Link to="/">Home</Link>
         <Link to="about">Services</Link>
+        <button className="Logout" id="Logout" onClick={handelLogout}>
+          Logout
+        </button>
       </div>
       <span className="openBtn" onClick={toggleNav}>
         &#9776;

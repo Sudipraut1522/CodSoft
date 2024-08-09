@@ -3,6 +3,7 @@ import "../HomePage/Home.css";
 import { Link } from "react-router-dom";
 import Card from "../../Component/Card/Card";
 import Instagram from "../../Component/Instagram/Instagram";
+import Footer from "../../Component/Footer/Footer";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
               ALWAYS BE
               <h1>ORIGINAL</h1>
               <p>NEW ARRIVALS ARE HERE</p>
-              <Link>
+              <Link to="products">
                 <p>SHOP NOW</p>
               </Link>
             </div>
@@ -33,6 +34,9 @@ const Home = () => {
       </div>
       <div className="instagramcomponent">
         <Instagram />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

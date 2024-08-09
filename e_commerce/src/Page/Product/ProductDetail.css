@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 0px;
+  margin-top: 133px;
   opacity: 0.6;
 }
 .productDetail:hover {
@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 .addtoprdouctcart {
-  margin-top: 15px;
+  margin-top: 60px;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
 }
 select {
   width: 100%;
-  padding: 4px;
+  padding: 8px;
 }
 .productdetail {
   display: flex;
@@ -47,7 +47,10 @@ select {
 .addtocartdiv {
   width: 100%;
 }
-
+#quantity {
+  width: 100%;
+  padding: 8px;
+}
 .quentityfield {
   padding: 8px;
 }
@@ -62,10 +65,12 @@ select {
 .description {
   opacity: 0.6;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 800px) {
   .productDetail {
-    margin-top: 280px;
+    margin-top: 132px;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +81,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -7px;
   }
   .numnerField {
     display: flex;
@@ -93,7 +99,6 @@ select {
     border-radius: 10px;
   }
   .productdetail {
-    background-color: gray;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -104,21 +109,25 @@ select {
     width: 100%;
   }
 
-  .quentityfield {
-    padding: 6px;
+  #quentityfield {
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
   }
   .addtocartbutton {
     width: 100%;
-    padding: 6px;
+    padding: 10px;
     background-color: blue;
     border: none;
     font-size: 15px;
     color: white;
+    border-radius: 10px;
+  }
+  .productImage {
+    height: 200px;
+    width: 200px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .productDetail {
     width: 100%;
@@ -126,12 +135,84 @@ select {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 154px;
+  }
+  .productImage {
+    height: 400px;
+    width: 400px;
   }
   .addtoprdouctcart {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .numnerField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .size {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  }
+  select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  #quantity {
+    background-color: rgb(241, 233, 233);
+    border-radius: 8px;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+  }
+  .productdetail {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+  .addtocartdiv {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .quentityfield {
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .addtocartbutton {
+    width: 100%;
+    background-color: blue;
+    border: none;
+    font-size: 15px;
+    color: white;
+  }
+}
+@media screen and (max-width: 480px) {
+  .productDetail {
+    margin-top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .addtoprdouctcart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 218px;
   }
   .numnerField {
     display: flex;
@@ -146,10 +227,8 @@ select {
     width: 100%;
     padding: 6px;
     box-sizing: border-box;
-    border-radius: 10px;
   }
   .productdetail {
-    background-color: gray;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -172,5 +251,9 @@ select {
     border: none;
     font-size: 15px;
     color: white;
+  }
+  .productImage {
+    height: 200px;
+    width: 200px;
   }
 }

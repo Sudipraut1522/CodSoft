@@ -3,11 +3,12 @@ import { BiLogIn } from "react-icons/bi";
 import "../Login/login.css";
 
 const Login = () => {
+  const userName = localStorage.getItem("username");
+  console.log("username", userName);
   return (
     <div>
       <span className="login">
-        <BiLogIn height={40} width={40} />
-        <p className="p">Login</p>
+        {userName ? <p className="p">Login</p> : ""}
       </span>
     </div>
   );

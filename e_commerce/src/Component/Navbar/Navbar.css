@@ -1,23 +1,23 @@
-/* Navbar.css */
 .mainNav {
   display: flex;
-  max-width: 100%;
   justify-content: space-between;
   align-items: center;
-  color: black;
-  height: auto;
   background-color: #f8f9fa; /* Light background for the navbar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-  padding-left: 50px;
-  padding-right: 100px;
+  padding: 10px 50px; /* Padding inside the navbar */
+  margin-top: 56px; /* Space for the fixed header */
+  position: fixed; /* Fixed position */
+  top: 5px; /* Below the header */
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
 }
 
 .nav1 {
+  width: 100%;
   list-style: none;
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center;
 }
 .nav1 a {
   text-decoration: none;
@@ -29,14 +29,28 @@
 }
 
 .nav2 {
-  max-width: 100%;
-  gap: 60px;
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
+  gap: 50px;
   align-items: center;
 }
+.nav2 a {
+  text-decoration: none;
+  font-size: large;
 
+  margin: 0;
+  font-size: 24px;
+}
+.userName {
+  font-size: 20px;
+  background-color: rgb(235, 227, 227);
+  padding: 10px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 600px) {
   .mainNav {
+    padding: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -48,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
   .mainNav {
     justify-content: space-between;
     padding-left: 10px;

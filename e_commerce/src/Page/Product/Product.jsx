@@ -29,11 +29,11 @@ const Product = () => {
         quantity: Number(quantity),
         image: category?.image,
         description: category?.description,
-        price: category?.price,
+        price: Number(category?.price),
+        totalPrice: category?.price * quantity,
       };
       const updatedProducts = [...selectedProduct, newProduct];
       setSelectedProduct(updatedProducts);
-      // navigate("/carts", { state: { products: updatedProducts } });
       setSize("");
       setQuantity(1);
     } else {

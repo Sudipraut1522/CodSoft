@@ -1,11 +1,15 @@
 .Header {
   width: 100%;
-  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000;
-  flex-wrap: wrap;
   color: white;
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  padding: 10px 0; /* Padding around the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }

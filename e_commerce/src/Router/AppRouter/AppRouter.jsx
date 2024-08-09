@@ -7,14 +7,17 @@ import Navbar from "../../Component/Navbar/Navbar";
 import Login from "../../Page/Login/Login";
 import PrivateRouter from "../PrivateRouter/PrivateRouter";
 import Product from "../../Page/Product/Product";
-import Cart from "../../Component/Cart/Cart";
+import "../AppRouter/AppRouter.css";
+import Cart from "../../Page/CartPage/Cart";
 
 const AppRouter = () => {
   return (
     <div>
       <BrowserRouter>
-        <Header />
-        <Navbar />
+        <div className="top">
+          <Header />
+          <Navbar />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -23,7 +26,7 @@ const AppRouter = () => {
           </Route>
           <Route path="login" element={<Login />} />
           <Route path="productdetail" element={<Product />} />
-          <Route path="carts" element={<Cart />} />
+          <Route path="cartitem" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </div>

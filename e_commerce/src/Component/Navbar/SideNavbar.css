@@ -1,19 +1,26 @@
 /* SideNavbar.css */
+
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
   top: 0;
   right: 0;
   background-color: #111;
-  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  overflow: hidden; /* Hide content when the sidebar is closed */
+}
+.Logout {
+  margin-top: 100px;
+  font-size: 23px;
+  background-color: #111;
+  border: none;
+  color: gray;
 }
 
 .sidenav.open {
-  width: 200px;
+  width: 200px; /* Width when the sidebar is open */
 }
 
 .sidenav a {
@@ -21,8 +28,7 @@
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: flex;
-  justify-content: center;
+  display: block; /* Ensure links take full width */
   transition: 0.3s;
 }
 
@@ -44,50 +50,44 @@
   font-size: 30px;
   cursor: pointer;
   padding: 10px;
-  display: inline-block;
+  position: fixed;
   top: 15px;
   right: 15px;
   color: black;
   border-radius: 50%;
+  background: #ddd;
+  border: none;
 }
 
 @media screen and (max-width: 480px) {
   .sidenav {
     position: absolute;
-
-    margin-top: 110px;
-    height: auto;
-    width: 100%; /* Adjust width for smaller screens */
-  }
-  .sidenav a {
+    margin-top: 66px;
     width: 100%;
-  }
-  a:hover {
-    color: #f1f1f1;
-    background-color: #575757;
+    height: 300px;
   }
   .sidenav.open {
+    width: 100%; /* Width when the sidebar is open */
+  }
+  .sidenav a {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    padding: 10px;
   }
   .sidenav .closebtn {
-    color: black;
+    color: rgb(197, 191, 191);
+    display: none;
   }
   .openBtn {
-    font-size: 15px;
-    cursor: pointer;
-    padding: 10px;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    color: white;
-    border-radius: 50%;
+    display: none;
   }
 }
+
 @media screen and (max-width: 270px) {
   .sidenav {
-    margin-top: 130px;
+    margin-top: 69px;
     height: auto;
-    width: 100%;
   }
 }

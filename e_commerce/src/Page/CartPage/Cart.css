@@ -1,0 +1,141 @@
+.cartDiv {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.scrollable-both {
+  height: 400px; /* Set the height you need */
+  overflow: auto; /* Enable scrolling in both directions */
+}
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageDiv img {
+  height: 100px;
+  width: 100px;
+}
+.incrementBtn {
+  box-sizing: border-box;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  justify-content: center;
+}
+.productdescription {
+  width: 180px;
+  color: gray;
+}
+.dltButton {
+  padding: 4px;
+  width: 60px;
+}
+.cartItem {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 163px;
+}
+
+.orderSummery {
+  width: 100%;
+}
+.orderDIv {
+  max-width: 100%;
+  display: flex;
+  position: sticky;
+}
+.subtotal {
+  display: flex;
+  gap: 120px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.ClearCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.ClearCart button {
+  padding: 4px;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .cartDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .scrollable-both {
+    height: 400px; /* Set the height you need */
+    overflow: auto; /* Enable scrolling in both directions */
+  }
+  .imageDiv {
+    display: flex;
+  }
+  .imageDiv img {
+    height: 100px;
+    width: 100px;
+  }
+  .incrementBtn {
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dltButton {
+    padding: 4px;
+    width: 100px;
+  }
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 463px;
+  }
+
+  .orderSummery {
+    width: 100%;
+  }
+  .orderDIv {
+    max-width: 100%;
+    display: flex;
+  }
+  .subtotal {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ClearCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .ClearCart button {
+    padding: 4px;
+    width: 100%;
+  }
+  .cartyEmpty {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-size: xx-large;
+    box-shadow: 1px 3px 2px 2px;
+  }
+}
